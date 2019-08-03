@@ -1,3 +1,8 @@
+<style>
+  .h1{
+    margin-top: 5px;
+  }
+</style>
 <template>
   <f7-page>
     <f7-navbar>
@@ -9,92 +14,192 @@
         <f7-link icon-if-ios="f7:menu" icon-if-md="material:menu" panel-open="right"></f7-link>
       </f7-nav-right>
     </f7-navbar>
-    <f7-swiper pagination navigation>
-      <f7-swiper-slide>Slide 1</f7-swiper-slide>
-      <f7-swiper-slide>Slide 2</f7-swiper-slide>
-      <f7-swiper-slide>Slide 3</f7-swiper-slide>
-    </f7-swiper>
-    <f7-block-title>设备</f7-block-title>
-    <f7-block color="gray">
-      <f7-row>
-        <f7-col>空调一</f7-col>
-        <f7-col>
-          <f7-icon f7="home"></f7-icon>
-        </f7-col>
-        <f7-col>
+    <f7-toolbar tabbar labels :position="isBottom ? 'bottom' : 'top'">
+      <f7-link tab-link="#tab-1" tab-link-active text="首页" icon-f7="home"></f7-link>
+      <f7-link tab-link="#tab-2" text="场景" icon-f7="logo_android"></f7-link>
+      <f7-link tab-link="#tab-3" text="我的" icon-f7="person"></f7-link>
+    </f7-toolbar>
+    <f7-tabs>
+      <f7-tab id="tab-1" class="page-content" tab-active>
+        <f7-swiper pagination navigation>
+          <f7-swiper-slide>Slide 1</f7-swiper-slide>
+          <f7-swiper-slide>Slide 2</f7-swiper-slide>
+          <f7-swiper-slide>Slide 3</f7-swiper-slide>
+        </f7-swiper>
+        <f7-block-title>设备</f7-block-title>
+        <f7-block strong inset style="background-color: darkgrey">
           <f7-row>
-            <f7-icon f7="chevron_up"></f7-icon>
+            <f7-col class="h1">空调一</f7-col>
+            <f7-col>
+              <f7-icon f7="home"></f7-icon>
+            </f7-col>
+            <f7-col>
+              <f7-row>
+                <f7-icon f7="chevron_up"></f7-icon>
+              </f7-row>
+              <f7-row>温度</f7-row>
+              <f7-row>
+                <f7-icon f7="chevron_down"></f7-icon>
+              </f7-row>
+            </f7-col>
+            <f7-col>
+              <f7-button style="font-size: x-small">切换模式</f7-button>
+            </f7-col>
+            <f7-col>
+              <f7-row>
+                <f7-button style="font-size: small">温度</f7-button>
+              </f7-row>
+              <f7-row>
+                <f7-button style="font-size: small">模式</f7-button>
+              </f7-row>
+            </f7-col>
           </f7-row>
-          <f7-row>温度</f7-row>
+        </f7-block>
+        <f7-block strong inset style="background-color: darkgrey">
           <f7-row>
-            <f7-icon f7="chevron_down"></f7-icon>
+            <f7-col>空调一</f7-col>
+            <f7-col>
+              <f7-icon f7="home"></f7-icon>
+            </f7-col>
+            <f7-col>
+              <f7-row>
+                <f7-icon f7="chevron_up"></f7-icon>
+              </f7-row>
+              <f7-row>温度</f7-row>
+              <f7-row>
+                <f7-icon f7="chevron_down"></f7-icon>
+              </f7-row>
+            </f7-col>
+            <f7-col>
+              <f7-button style="font-size: x-small">切换模式</f7-button>
+            </f7-col>
+            <f7-col>
+              <f7-row>
+                <f7-button style="font-size: small">温度</f7-button>
+              </f7-row>
+              <f7-row>
+                <f7-button style="font-size: small">模式</f7-button>
+              </f7-row>
+            </f7-col>
           </f7-row>
-        </f7-col>
-        <f7-col>
-          <f7-button style="font-size: x-small">切换模式</f7-button>
-        </f7-col>
-        <f7-col>
+        </f7-block>
+        <f7-block strong inset style="background-color: darkgrey">
           <f7-row>
-            <f7-button style="font-size: x-small">温度</f7-button>
+            <f7-col>空调一</f7-col>
+            <f7-col>
+              <f7-icon f7="home"></f7-icon>
+            </f7-col>
+            <f7-col>
+              <f7-row>
+                <f7-icon f7="chevron_up"></f7-icon>
+              </f7-row>
+              <f7-row>温度</f7-row>
+              <f7-row>
+                <f7-icon f7="chevron_down"></f7-icon>
+              </f7-row>
+            </f7-col>
+            <f7-col>
+              <f7-button style="font-size: x-small">切换模式</f7-button>
+            </f7-col>
+            <f7-col>
+              <f7-row>
+                <f7-button style="font-size: small">温度</f7-button>
+              </f7-row>
+              <f7-row>
+                <f7-button style="font-size: small">模式</f7-button>
+              </f7-row>
+            </f7-col>
           </f7-row>
+        </f7-block>
+        <f7-icon f7="add_round_fill" style="margin-left: 45%"></f7-icon>
+      </f7-tab>
+      <f7-tab id="tab-2" class="page-content">
+        <f7-swiper pagination navigation>
+          <f7-swiper-slide>Slide 1</f7-swiper-slide>
+          <f7-swiper-slide>Slide 2</f7-swiper-slide>
+          <f7-swiper-slide>Slide 3</f7-swiper-slide>
+        </f7-swiper>
+        <f7-block-title>设备</f7-block-title>
+        <f7-block strong inset style="background-color: darkgrey">
           <f7-row>
-            <f7-button style="font-size: x-small">模式</f7-button>
+            <f7-col>
+              <f7-button>回家路上</f7-button>
+            </f7-col>
+            <f7-col>
+              <f7-row>开关</f7-row>
+              <f7-row><f7-toggle color="blue"></f7-toggle></f7-row>
+            </f7-col>
+            <f7-col>
+              <f7-row>生效时段</f7-row>
+              <f7-row>18:00-19:00</f7-row>
+            </f7-col>
           </f7-row>
-        </f7-col>
-      </f7-row>
-    </f7-block>
+        </f7-block>
+        <f7-block strong inset style="background-color: darkgrey">
+          <f7-row>
+            <f7-col>
+              <f7-button>回家路上</f7-button>
+            </f7-col>
+            <f7-col>
+              <f7-row>开关</f7-row>
+              <f7-row><f7-toggle color="blue"></f7-toggle></f7-row>
+            </f7-col>
+            <f7-col>
+              <f7-row>生效时段</f7-row>
+              <f7-row>18:00-19:00</f7-row>
+            </f7-col>
+          </f7-row>
+        </f7-block>
+        <f7-block strong inset style="background-color: darkgrey">
+          <f7-row>
+            <f7-col>
+              <f7-button>回家路上</f7-button>
+            </f7-col>
+            <f7-col>
+              <f7-row>开关</f7-row>
+              <f7-row><f7-toggle color="blue"></f7-toggle></f7-row>
+            </f7-col>
+            <f7-col>
+              <f7-row>生效时段</f7-row>
+              <f7-row>18:00-19:00</f7-row>
+            </f7-col>
+          </f7-row>
+        </f7-block>
+        <f7-icon f7="add_round_fill" style="margin-left: 45%"></f7-icon>
+      </f7-tab>
+      <f7-tab id="tab-3" class="page-content">
+        <f7-list media-list>
+          <f7-list-item
+            title="昵称XXXXX"
+            subtitle="你已经使用智能家居X天"
+          >
+            <img slot="media" src="https://cdn.framework7.io/placeholder/people-160x160-1.jpg" width="80" />
+          </f7-list-item>
+        </f7-list>
+        <f7-list>
+          <f7-list-item>
+          <f7-icon f7="gear"></f7-icon>
+          <p>设置</p>
+        </f7-list-item>
+          <f7-list-item>
+            <f7-icon f7="bars"></f7-icon>
+            <p>设备列表</p>
+          </f7-list-item>
+          <f7-list-item>
+            <f7-icon f7="bell"></f7-icon>
+            <p>提醒</p>
+          </f7-list-item>
+        </f7-list>
+      </f7-tab>
+    </f7-tabs>
   </f7-page>
 </template>
 <script>
-    import mqtt from 'mqtt'
-    import {MQTT_SERVICE} from "../peizhi";
-    var client;
-    const options = {
-        connectTimeout: 40000,
-        // host:'http://test.mosquitto.org/'
-        // port:'1883'
-        //host:'123.207.167.185',
-        //port:'1883'
-        // clean: true
-    };
-    client = mqtt.connect('ws://123.207.167.185:1883/mqtt');
-    //client = mqtt.connect('ws://broker.hivemq.com:8000/mqtt',options);
-    //client = mqtt.connect(options);
-    client.on('reconnect', (error)=>{
-        console.log('正在重新链接',error)
-    })
-    client.on('error', (error)=>{
-        console.log('链接失败',error)
-    })
-    client.on('connect',(e)=>{
-        console.log('链接成功！')
-    })
-    export default {
-        // name:'viewtest',
-        // data(){
-        //     return{
-        //         msg:''
-        //     }
-        // },
-        // created() {
-        //     console.log('1111');
-        //     this.mqttMSG();
-        //     console.log('22222');
-        // },
-        // methods:{
-        //     mqttMSG(){
-        //         console.log('11112');
-        //         client.on('connect',(e)=>{
-        //             console.log('连接成功');
-        //             client.public('device', 'wdnmd', {qos:1}, (error)=>{
-        //                 if(!error){
-        //                     console.log('success')
-        //                 }else {
-        //                     console.log('fail')
-        //                 }
-        //             })
-        //         })
-        //     }
-        // }
+    export default{
+        data() {
+            return {
+                isBottom: true,
+            };
+        }
     }
 </script>
