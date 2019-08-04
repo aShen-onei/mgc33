@@ -1,8 +1,4 @@
-<style>
-  .h1{
-    margin-top: 5px;
-  }
-</style>
+
 <template>
   <f7-page>
     <f7-navbar>
@@ -29,85 +25,97 @@
         <f7-block-title>设备</f7-block-title>
         <f7-block strong inset style="background-color: darkgrey">
           <f7-row>
-            <f7-col class="h1">空调一</f7-col>
-            <f7-col>
-              <f7-icon f7="home"></f7-icon>
+            <f7-col class="device">
+              <f7-button style="color: black">空调</f7-button>
             </f7-col>
             <f7-col>
+              <f7-icon material="power_settings_new" class="icon1"></f7-icon>
+            </f7-col>
+            <f7-col style="width: 30px">
               <f7-row>
                 <f7-icon f7="chevron_up"></f7-icon>
               </f7-row>
-              <f7-row>温度</f7-row>
+              <f7-row>
+                <f7-col>温度</f7-col>
+              </f7-row>
               <f7-row>
                 <f7-icon f7="chevron_down"></f7-icon>
               </f7-row>
             </f7-col>
             <f7-col>
-              <f7-button style="font-size: x-small">切换模式</f7-button>
+              <f7-button class="modchange">切换模式</f7-button>
             </f7-col>
-            <f7-col>
+            <f7-col style="margin-top: 5px">
               <f7-row>
-                <f7-button style="font-size: small">温度</f7-button>
+                <f7-button style="font-size: small" class="fontcolor">温度</f7-button>
               </f7-row>
               <f7-row>
-                <f7-button style="font-size: small">模式</f7-button>
+                <f7-button style="font-size: small" class="fontcolor">模式</f7-button>
               </f7-row>
             </f7-col>
           </f7-row>
         </f7-block>
         <f7-block strong inset style="background-color: darkgrey">
           <f7-row>
-            <f7-col>空调一</f7-col>
-            <f7-col>
-              <f7-icon f7="home"></f7-icon>
+            <f7-col class="device">
+              <f7-button style="color: black;width: 60px" href="/apm/">除湿机</f7-button>
             </f7-col>
             <f7-col>
+              <f7-icon material="power_settings_new" class="icon1"></f7-icon>
+            </f7-col>
+            <f7-col style="width: 30px">
               <f7-row>
                 <f7-icon f7="chevron_up"></f7-icon>
               </f7-row>
-              <f7-row>温度</f7-row>
+              <f7-row>
+                <f7-col>温度</f7-col>
+              </f7-row>
               <f7-row>
                 <f7-icon f7="chevron_down"></f7-icon>
               </f7-row>
             </f7-col>
             <f7-col>
-              <f7-button style="font-size: x-small">切换模式</f7-button>
+              <f7-button class="modchange">切换模式</f7-button>
             </f7-col>
-            <f7-col>
+            <f7-col style="margin-top: 5px">
               <f7-row>
-                <f7-button style="font-size: small">温度</f7-button>
+                <f7-button style="font-size: small" class="fontcolor">温度</f7-button>
               </f7-row>
               <f7-row>
-                <f7-button style="font-size: small">模式</f7-button>
+                <f7-button style="font-size: small" class="fontcolor">模式</f7-button>
               </f7-row>
             </f7-col>
           </f7-row>
         </f7-block>
         <f7-block strong inset style="background-color: darkgrey">
           <f7-row>
-            <f7-col>空调一</f7-col>
-            <f7-col>
-              <f7-icon f7="home"></f7-icon>
+            <f7-col class="device">
+              <f7-button style="color: black">灯</f7-button>
             </f7-col>
             <f7-col>
-              <f7-row>
-                <f7-icon f7="chevron_up"></f7-icon>
-              </f7-row>
-              <f7-row>温度</f7-row>
-              <f7-row>
-                <f7-icon f7="chevron_down"></f7-icon>
-              </f7-row>
+              <f7-icon material="power_settings_new" class="icon1"></f7-icon>
+            </f7-col>
+            <f7-col class="light">
+              <f7-button style="font-size: small" class="fontcolor">回家</f7-button>
+            </f7-col>
+            <f7-col class="light">
+              <f7-button style="font-size: small" class="fontcolor">迎宾</f7-button>
+            </f7-col>
+            <f7-col class="light">
+              <f7-button style="font-size: small" class="fontcolor">浪漫</f7-button>
+            </f7-col>
+          </f7-row>
+        </f7-block>
+        <f7-block strong inset style="background-color: darkgrey">
+          <f7-row>
+            <f7-col style="background-color: lightslategray">
+              <f7-button style="color: black">客厅窗帘</f7-button>
             </f7-col>
             <f7-col>
-              <f7-button style="font-size: x-small">切换模式</f7-button>
+              <f7-button style="font-size: small" class="fontcolor">一键打开</f7-button>
             </f7-col>
             <f7-col>
-              <f7-row>
-                <f7-button style="font-size: small">温度</f7-button>
-              </f7-row>
-              <f7-row>
-                <f7-button style="font-size: small">模式</f7-button>
-              </f7-row>
+              <f7-button style="font-size: small" class="fontcolor">一键关闭</f7-button>
             </f7-col>
           </f7-row>
         </f7-block>
@@ -122,8 +130,8 @@
         <f7-block-title>设备</f7-block-title>
         <f7-block strong inset style="background-color: darkgrey">
           <f7-row>
-            <f7-col>
-              <f7-button>回家路上</f7-button>
+            <f7-col class="device2">
+              <f7-button style="color: black">回家路上</f7-button>
             </f7-col>
             <f7-col>
               <f7-row>开关</f7-row>
@@ -137,8 +145,8 @@
         </f7-block>
         <f7-block strong inset style="background-color: darkgrey">
           <f7-row>
-            <f7-col>
-              <f7-button>回家路上</f7-button>
+            <f7-col class="device2">
+              <f7-button style="color: black">到家</f7-button>
             </f7-col>
             <f7-col>
               <f7-row>开关</f7-row>
@@ -152,8 +160,23 @@
         </f7-block>
         <f7-block strong inset style="background-color: darkgrey">
           <f7-row>
+            <f7-col class="device2">
+              <f7-button style="color: black">离家</f7-button>
+            </f7-col>
             <f7-col>
-              <f7-button>回家路上</f7-button>
+              <f7-row>开关</f7-row>
+              <f7-row><f7-toggle color="blue"></f7-toggle></f7-row>
+            </f7-col>
+            <f7-col>
+              <f7-row>生效时段</f7-row>
+              <f7-row>18:00-19:00</f7-row>
+            </f7-col>
+          </f7-row>
+        </f7-block>
+        <f7-block strong inset style="background-color: darkgrey">
+          <f7-row>
+            <f7-col class="device2">
+              <f7-button style="color: black">自定义</f7-button>
             </f7-col>
             <f7-col>
               <f7-row>开关</f7-row>
