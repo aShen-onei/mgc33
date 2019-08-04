@@ -130,7 +130,7 @@
         <f7-block strong inset style="background-color: darkgrey">
           <f7-row>
             <f7-col class="device2">
-              <f7-button style="color: black">回家路上</f7-button>
+              <f7-button style="color: black" href="/wayhome/">回家路上</f7-button>
             </f7-col>
             <f7-col>
               <f7-row>开关</f7-row>
@@ -145,7 +145,7 @@
         <f7-block strong inset style="background-color: darkgrey">
           <f7-row>
             <f7-col class="device2">
-              <f7-button style="color: black">到家</f7-button>
+              <f7-button style="color: black" href="/athome/">到家</f7-button>
             </f7-col>
             <f7-col>
               <f7-row>开关</f7-row>
@@ -160,7 +160,7 @@
         <f7-block strong inset style="background-color: darkgrey">
           <f7-row>
             <f7-col class="device2">
-              <f7-button style="color: black">离家</f7-button>
+              <f7-button style="color: black" href="/leavehome">离家</f7-button>
             </f7-col>
             <f7-col>
               <f7-row>开关</f7-row>
