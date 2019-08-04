@@ -26,7 +26,7 @@
         <f7-block strong inset style="background-color: darkgrey">
           <f7-row>
             <f7-col class="device">
-              <f7-button style="color: black">空调</f7-button>
+              <f7-button style="color: black" href="/kongtiao/">空调</f7-button>
             </f7-col>
             <f7-col>
               <f7-icon material="power_settings_new" class="icon1"></f7-icon>
@@ -90,7 +90,7 @@
         <f7-block strong inset style="background-color: darkgrey">
           <f7-row>
             <f7-col class="device">
-              <f7-button style="color: black">灯</f7-button>
+              <f7-button style="color: black" href="/light/">灯</f7-button>
             </f7-col>
             <f7-col>
               <f7-icon material="power_settings_new" class="icon1"></f7-icon>
