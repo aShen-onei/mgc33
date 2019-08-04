@@ -44,9 +44,11 @@
 .blockFont{
   padding: 1px;
 }
-/*kongtiao*/
-.icon3{
+.icon3 {
   font-size: 80px;
   margin-top: 15px;
-
+}
+/*curtain*/
+.fontsize1{
+  font-size: 20px;
 }

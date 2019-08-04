@@ -16,10 +16,10 @@ import AppStyles from './css/app.css';
 
 // Import App Component
 import App from './app.vue';
+import VueRESource from 'vue-resource'
 
 // Init F7 Vue Plugin
 Framework7.use(Framework7Vue);
-
 // Init App
 new Vue({
   el: '#app',
@@ -30,3 +30,4 @@ new Vue({
     app: App
   }
 });
+Vue.use(VueRESource);

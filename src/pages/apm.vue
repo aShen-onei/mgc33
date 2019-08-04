@@ -19,11 +19,77 @@
       <f7-row>
         <f7-col class="tcShow">
           <div class="block1">
-
               <p style="font-size: 15px">室内PM2.5(微克/m³):</p>
               <p style="font-size: 25px">XX</p>
-
           </div>
+        </f7-col>
+      </f7-row>
+      <f7-row>
+        <f7-col>
+          <f7-row>
+            <f7-button>优</f7-button>
+          </f7-row>
+          <f7-row>室内空气</f7-row>
+        </f7-col>
+        <f7-col>
+          <f7-row>
+            <f7-button>60%</f7-button>
+          </f7-row>
+          <f7-row>滤网过滤</f7-row>
+        </f7-col>
+        <f7-col>
+          <f7-row>
+            <f7-button>优</f7-button>
+          </f7-row>
+          <f7-row>异味指数</f7-row>
+        </f7-col>
+      </f7-row>
+      <f7-row>
+        <f7-col class="tcShow">
+          <div class="block1">
+            <p style="font-size: 15px">室内PM2.5(微克/m³):</p>
+            <p style="font-size: 25px">XX</p>
+          </div>
+        </f7-col>
+      </f7-row>
+      <f7-row>
+        <f7-col>
+          <f7-row>
+            <f7-icon f7="bolt"></f7-icon>
+          </f7-row>
+          <f7-row>自动</f7-row>
+        </f7-col>
+        <f7-col>
+          <f7-row>
+            <f7-icon f7="hand_alt"></f7-icon>
+          </f7-row>
+          <f7-row>手动</f7-row>
+        </f7-col>
+        <f7-col>
+        <f7-row><f7-icon f7="add"></f7-icon></f7-row>
+        <f7-row>风速加</f7-row>
+        </f7-col>
+        <f7-col>
+          <f7-row><f7-icon f7="delete"></f7-icon></f7-row>
+          <f7-row>风速减</f7-row>
+        </f7-col>
+      </f7-row>
+      <f7-row>
+        <f7-col>
+          <f7-row><f7-icon f7="sort_up"></f7-icon></f7-row>
+          <f7-row>加湿</f7-row>
+        </f7-col>
+        <f7-col>
+          <f7-row><f7-icon f7="time"></f7-icon></f7-row>
+          <f7-row>定时</f7-row>
+        </f7-col>
+        <f7-col>
+          <f7-row><f7-icon f7="close"></f7-icon></f7-row>
+          <f7-row>杀菌</f7-row>
+        </f7-col>
+        <f7-col>
+          <f7-row><f7-icon f7="bulb"></f7-icon></f7-row>
+          <f7-row>睡眠</f7-row>
         </f7-col>
       </f7-row>
     </f7-block>

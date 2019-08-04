@@ -1,4 +1,3 @@
-
 <template>
   <f7-page>
     <f7-navbar>
@@ -28,7 +27,7 @@
             <f7-col class="device">
               <f7-button style="color: black" href="/kongtiao/">空调</f7-button>
             </f7-col>
-            <f7-col>
+            <f7-col v-on:click="test">
               <f7-icon material="power_settings_new" class="icon1"></f7-icon>
             </f7-col>
             <f7-col style="width: 30px">
@@ -90,7 +89,7 @@
         <f7-block strong inset style="background-color: darkgrey">
           <f7-row>
             <f7-col class="device">
-              <f7-button style="color: black" href="/light/">灯</f7-button>
+              <f7-button style="color: black" v-on:click="getjson" href="/light/">灯</f7-button>
             </f7-col>
             <f7-col>
               <f7-icon material="power_settings_new" class="icon1"></f7-icon>
@@ -109,7 +108,7 @@
         <f7-block strong inset style="background-color: darkgrey">
           <f7-row>
             <f7-col style="background-color: lightslategray">
-              <f7-button style="color: black">客厅窗帘</f7-button>
+              <f7-button style="color: black" href="/curtain/">客厅窗帘</f7-button>
             </f7-col>
             <f7-col>
               <f7-button style="font-size: small" class="fontcolor">一键打开</f7-button>
@@ -218,11 +217,63 @@
   </f7-page>
 </template>
 <script>
-    export default{
+    function showPosition(position) {
+        var latitude,longitude;
+        //定位成功的回调函数，参数position是一个object对象。
+        latitude = position.coords.latitude; //提取维度
+        longitude =  position.coords.longitude; //提取经度
+        console.log(latitude,longitude)
+    }
+
+    function showError(error) {
+        //定位失败的回调函数。通过提取错误码，得到具体的错误原因
+        switch (error.code) {
+            case error.PERMISSION_DENIED:
+                //GPS权限获取失败
+                break;
+            case error.POSITION_UNAVAILABLE:
+                //无法获取当前位置
+                break;
+            case error.TIMEOUT:
+                //操作超时
+                break;
+        }
+    }
+    export default {
         data() {
             return {
                 isBottom: true,
             };
+        },
+        methods: {
+            getjson() {
+                console.log('发送请求');
+                var params = {
+                    'hjj': '1111111',
+                    'llll': '22222'
+                };
+                var p = JSON.stringify(params);
+                this.$http.post('http://10.74.138.11:7668//SendJsonToHardware', {
+                        'hjj': '1111111',
+                        'llll': '22222'
+                    }
+                ).then(function (res) {
+                    console.log(res)
+                }, function () {
+                    console.log('请求失败处理');
+                });
+            },
+            test() {
+                if (navigator.geolocation) {
+                    console.log('获取成功');
+                    navigator.geolocation.getCurrentPosition(function (res) {
+                        alert("纬度："+position.coords.latitude+"；经度："+position.coords.longitude);
+                    },showError)
+                } else {
+                    console.log('请获取权限');
+                }
+                console.log('图标');
+            },
         }
     }
 </script>
