@@ -129,12 +129,14 @@
 </template>
 
 <script>
+  var url = 'http://10.73.22.65:7668//SendJsonToHardware';
+  var ac= -1;
     export default {
         methods:{
            acpower(){
                if (ac < 0)
                {
-                   this.$http.post('http://10.74.138.11:7668//SendJsonToHardware',
+                   this.$http.post(url,
                        {
                            'device':'1',
                            'ac': '1'
@@ -147,7 +149,7 @@
                        console.log('请求失败处理');
                    });
                } else {
-                   this.$http.post('http://10.74.138.11:7668//SendJsonToHardware', {
+                   this.$http.post(url, {
                            'ac': '-1'
                        }
                    ).then(function (res) {

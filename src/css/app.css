@@ -5,7 +5,6 @@
 }
 .device2{
   margin-top: 5px;
-  background-color: white;
 }
 .icon1{
   font-size: 50px;
@@ -59,9 +58,29 @@
 .icon5{
   font-size: 40px;
   margin-left: 30px;
-
 }
 .kongtiaoIcon{
   margin-left: 20px;
   margin-top: 5px;
+}
+.buttonsty{
+  color: white;
+  font-weight: bold;
+  font-size: 20px
+}
+.blockpic1{
+  background: url("../pic/scene1.png") no-repeat no-repeat;
+  background-size: 100% 100%;
+}
+.blockpic2{
+  background: url("../pic/scene2.png") no-repeat no-repeat;
+  background-size: 100% 100%;
+}
+.blockpic3{
+  background: url("../pic/scene3.png") no-repeat no-repeat;
+  background-size: 100% 100%;
+}
+.blockpic4{
+  background: url("../pic/scene4.png") no-repeat no-repeat;
+  background-size: 100% 100%;
 }

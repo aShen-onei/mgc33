@@ -9,8 +9,8 @@
     <f7-block>
       <f7-row>
         <f7-col width="70" class="tcShow">
-          <p style="border-bottom: 1px solid black">温度:xx度</p>
-          <p style="border-bottom: 1px solid black">湿度:xx%</p>
+          <p style="border-bottom: 1px solid black">温度:25度</p>
+          <p style="border-bottom: 1px solid black">湿度:30%</p>
         </f7-col>
         <f7-col width="30" v-on:click="acpower">
           <f7-icon material="power_settings_new" class="icon2"></f7-icon>
@@ -19,12 +19,12 @@
       <f7-row>
         <f7-col class="tcShow">
           <div class="block1">
-              <p style="font-size: 15px;color: white">室内PM2.5(微克/m³):</p>
-              <p style="font-size: 25px;color: white">XX</p>
+              <p style="color: white">室内PM2.5(微克/m³):</p>
+              <p style="font-size: 25px;color: white">88</p>
           </div>
         </f7-col>
       </f7-row>
-      <f7-row>
+      <f7-row style="margin-left: 60px">
         <f7-col>
           <f7-row>
             <f7-button>优</f7-button>
@@ -47,12 +47,12 @@
       <f7-row>
         <f7-col class="tcShow">
           <div class="block1">
-            <p style="font-size: 15px;color: white">室内PM2.5(微克/m³):</p>
-            <p style="font-size: 25px;color: white">XX</p>
+            <p style="color: white">模式自动|风速5档</p>
+            <p style="font-size: 25px;color: white">定时：2小时</p>
           </div>
         </f7-col>
       </f7-row>
-      <f7-row>
+      <f7-row style="margin: 40px">
         <f7-col>
           <f7-row>
             <f7-icon f7="bolt"></f7-icon>
@@ -74,7 +74,7 @@
           <f7-row>风速减</f7-row>
         </f7-col>
       </f7-row>
-      <f7-row>
+      <f7-row style="margin: 40px">
         <f7-col>
           <f7-row><f7-icon f7="sort_up"></f7-icon></f7-row>
           <f7-row>加湿</f7-row>
