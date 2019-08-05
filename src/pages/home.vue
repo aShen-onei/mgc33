@@ -52,7 +52,7 @@
                 <f7-button style="font-size: small" class="fontcolor">温度</f7-button>
               </f7-row>
               <f7-row>
-                <f7-button style="font-size: small" class="fontcolor">模式</f7-button>
+                <f7-button style="font-size: small ; margin-top: 15px" class="fontcolor">模式</f7-button>
               </f7-row>
             </f7-col>
           </f7-row>
@@ -84,7 +84,7 @@
                 <f7-button style="font-size: small" class="fontcolor">温度</f7-button>
               </f7-row>
               <f7-row>
-                <f7-button style="font-size: small" class="fontcolor">模式</f7-button>
+                <f7-button style="font-size: small ;margin-top: 15px" class="fontcolor">模式</f7-button>
               </f7-row>
             </f7-col>
           </f7-row>
