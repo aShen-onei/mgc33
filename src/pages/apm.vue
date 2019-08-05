@@ -12,15 +12,15 @@
           <p style="border-bottom: 1px solid black">温度:xx度</p>
           <p style="border-bottom: 1px solid black">湿度:xx%</p>
         </f7-col>
-        <f7-col width="30">
+        <f7-col width="30" v-on:click="acpower">
           <f7-icon material="power_settings_new" class="icon2"></f7-icon>
         </f7-col>
       </f7-row>
       <f7-row>
         <f7-col class="tcShow">
           <div class="block1">
-              <p style="font-size: 15px">室内PM2.5(微克/m³):</p>
-              <p style="font-size: 25px">XX</p>
+              <p style="font-size: 15px;color: white">室内PM2.5(微克/m³):</p>
+              <p style="font-size: 25px;color: white">XX</p>
           </div>
         </f7-col>
       </f7-row>
@@ -47,8 +47,8 @@
       <f7-row>
         <f7-col class="tcShow">
           <div class="block1">
-            <p style="font-size: 15px">室内PM2.5(微克/m³):</p>
-            <p style="font-size: 25px">XX</p>
+            <p style="font-size: 15px;color: white">室内PM2.5(微克/m³):</p>
+            <p style="font-size: 25px;color: white">XX</p>
           </div>
         </f7-col>
       </f7-row>
@@ -98,7 +98,37 @@
 
 <script>
     export default {
+        methods:{
+            acpower(){
+                if (ac < 0)
+                {
+                    this.$http.post('http://10.74.138.11:7668//SendJsonToHardware',
+                        {
+                            'device':'1',
+                            'ac': '1'
+                        }
+                    ).then(function (res)
+                    {
+                        ac = 1;
+                        console.log('成功');
+                    }, function () {
+                        console.log('请求失败处理');
+                    });
+                } else {
+                    this.$http.post('http://10.74.138.11:7668//SendJsonToHardware', {
+                            'ac': '-1'
+                        }
+                    ).then(function (res) {
+                        ac=-1
+                    }, function () {
+                        console.log('请求失败处理');
+                    });
+                }
+            }
+        }
+
     }
+
 </script>
 
 <style scoped>

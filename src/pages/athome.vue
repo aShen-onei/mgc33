@@ -3,30 +3,29 @@
 
     <f7-navbar title="到家" back-link="Back"></f7-navbar>
 
-    <f7-block>
-      <f7-row>
-        <f7-col>
-          <f7-row>启用时间</f7-row>
-          <f7-row><f7-button style="background-color: darkgray;color: black">18:00-19:00</f7-button></f7-row>
-        </f7-col>
-        <f7-col>
-          <f7-row>模式</f7-row>
-          <f7-row>
-            <f7-list>
-              <f7-list-item radio title="全自动" name="demo-radio" checked></f7-list-item>
-              <f7-list-item radio title="弹窗执行" name="demo-radio"></f7-list-item>
-              <f7-list-item radio title="手动执行" name="demo-radio"></f7-list-item>
-            </f7-list>
-          </f7-row>
-        </f7-col>
-      </f7-row>
+<!--    <f7-block>-->
+<!--      <f7-row>-->
+<!--&lt;!&ndash;        <f7-col>&ndash;&gt;-->
+<!--&lt;!&ndash;          <f7-row>启用时间</f7-row>&ndash;&gt;-->
+<!--&lt;!&ndash;          <f7-row><f7-button style="background-color: #22aef9;color: white">18:00-19:00</f7-button></f7-row>&ndash;&gt;-->
+<!--&lt;!&ndash;        </f7-col>&ndash;&gt;-->
+<!--        <f7-col>-->
+          <f7-block-title>模式</f7-block-title>
+          <f7-list>
+            <f7-list-item radio title="全自动" name="demo-radio" checked></f7-list-item>
+            <f7-list-item radio title="弹窗执行" name="demo-radio"></f7-list-item>
+            <f7-list-item radio title="手动执行" name="demo-radio"></f7-list-item>
+          </f7-list>
+<!--        </f7-col>-->
+<!--      </f7-row>-->
       <f7-row>
         <f7-col>如果满足以下条件</f7-col>
       </f7-row>
       <f7-col>
-        <f7-button style="background-color: darkgray;color: black">摄像头已经检测到人脸</f7-button>
+        <f7-button style="background-color: #22aef9;color: white;width: 200px;height: 30px;
+    margin-left: 90px;">摄像头已经检测到人脸</f7-button>
       </f7-col>
-    </f7-block>
+<!--    </f7-block>-->
 
     <f7-block>
       <f7-row>
@@ -40,10 +39,13 @@
     <f7-block>
       <f7-col>执行以下操作</f7-col>
       <f7-col>
-        <f7-button style="background-color: darkgray;color: black">打开智能灯，回家模式</f7-button>
+        <f7-button style="background-color: #22aef9;color: white;width: 300px;height: 30px;
+    margin-left: 50px;">打开智能灯，回家模式</f7-button>
       </f7-col>
       <f7-col>
-        <f7-button style="background-color: darkgray;color: black">打开窗帘，自动模式</f7-button>
+        <f7-button style="background-color: #22aef9;color: white; width: 300px;
+    height: 30px;
+    margin-left: 50px;">打开窗帘，自动模式</f7-button>
       </f7-col>
     </f7-block>
 

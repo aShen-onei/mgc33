@@ -17,12 +17,15 @@
     <f7-tabs>
       <f7-tab id="tab-1" class="page-content" tab-active>
         <f7-swiper pagination navigation>
-          <f7-swiper-slide>Slide 1</f7-swiper-slide>
-          <f7-swiper-slide>Slide 2</f7-swiper-slide>
-          <f7-swiper-slide>Slide 3</f7-swiper-slide>
+          <f7-swiper-slide><img src="../pic/1.jpg"></f7-swiper-slide>
+          <f7-swiper-slide><img src="../pic/2.jpg"> </f7-swiper-slide>
+          <f7-swiper-slide><img src="../pic/3.jpg"> </f7-swiper-slide>
+          <f7-swiper-slide><img src="../pic/4.jpg"> </f7-swiper-slide>
+          <f7-swiper-slide><img src="../pic/5.jpg"> </f7-swiper-slide>
+          <f7-swiper-slide><img src="../pic/6.jpg"> </f7-swiper-slide>
         </f7-swiper>
         <f7-block-title>设备</f7-block-title>
-        <f7-block strong inset style="background-color: darkgrey">
+        <f7-block strong inset style="background-color: #22aef9">
           <f7-row>
             <f7-col class="device">
               <f7-button style="color: black" href="/kongtiao/">空调</f7-button>
@@ -54,10 +57,10 @@
             </f7-col>
           </f7-row>
         </f7-block>
-        <f7-block strong inset style="background-color: darkgrey">
+        <f7-block strong inset style="background-color: #22aef9">
           <f7-row>
             <f7-col class="device">
-              <f7-button style="color: black;width: 60px" href="/apm/">除湿机</f7-button>
+              <f7-button style="color: black;width: 60px" href="/apm/">空气净化器</f7-button>
             </f7-col>
             <f7-col>
               <f7-icon material="power_settings_new" class="icon1"></f7-icon>
@@ -86,7 +89,7 @@
             </f7-col>
           </f7-row>
         </f7-block>
-        <f7-block strong inset style="background-color: darkgrey">
+        <f7-block strong inset style="background-color: #22aef9">
           <f7-row>
             <f7-col class="device">
               <f7-button style="color: black" v-on:click="getjson" href="/light/">灯</f7-button>
@@ -105,9 +108,9 @@
             </f7-col>
           </f7-row>
         </f7-block>
-        <f7-block strong inset style="background-color: darkgrey">
+        <f7-block strong inset style="background-color: #22aef9">
           <f7-row>
-            <f7-col style="background-color: lightslategray">
+            <f7-col style="background-color: white">
               <f7-button style="color: black" href="/curtain/">客厅窗帘</f7-button>
             </f7-col>
             <f7-col>
@@ -120,14 +123,17 @@
         </f7-block>
         <f7-icon f7="add_round_fill" style="margin-left: 45%"></f7-icon>
       </f7-tab>
-      <f7-tab id="tab-2" class="page-content">
+      <f7-tab id="tab-2">
         <f7-swiper pagination navigation>
-          <f7-swiper-slide>Slide 1</f7-swiper-slide>
-          <f7-swiper-slide>Slide 2</f7-swiper-slide>
-          <f7-swiper-slide>Slide 3</f7-swiper-slide>
+          <f7-swiper-slide><img src="../pic/1.jpg"></f7-swiper-slide>
+          <f7-swiper-slide><img src="../pic/2.jpg"> </f7-swiper-slide>
+          <f7-swiper-slide><img src="../pic/3.jpg"> </f7-swiper-slide>
+          <f7-swiper-slide><img src="../pic/4.jpg"> </f7-swiper-slide>
+          <f7-swiper-slide><img src="../pic/5.jpg"> </f7-swiper-slide>
+          <f7-swiper-slide><img src="../pic/6.jpg"> </f7-swiper-slide>
         </f7-swiper>
         <f7-block-title>设备</f7-block-title>
-        <f7-block strong inset style="background-color: darkgrey">
+        <f7-block strong inset style="background-color: #22aef9">
           <f7-row>
             <f7-col class="device2">
               <f7-button style="color: black" href="/wayhome/">回家路上</f7-button>
@@ -142,7 +148,7 @@
             </f7-col>
           </f7-row>
         </f7-block>
-        <f7-block strong inset style="background-color: darkgrey">
+        <f7-block strong inset style="background-color: #22aef9">
           <f7-row>
             <f7-col class="device2">
               <f7-button style="color: black" href="/athome/">到家</f7-button>
@@ -157,7 +163,7 @@
             </f7-col>
           </f7-row>
         </f7-block>
-        <f7-block strong inset style="background-color: darkgrey">
+        <f7-block strong inset style="background-color: #22aef9">
           <f7-row>
             <f7-col class="device2">
               <f7-button style="color: black" href="/leavehome">离家</f7-button>
@@ -172,7 +178,7 @@
             </f7-col>
           </f7-row>
         </f7-block>
-        <f7-block strong inset style="background-color: darkgrey">
+        <f7-block strong inset style="background-color: #22aef9">
           <f7-row>
             <f7-col class="device2">
               <f7-button style="color: black">自定义</f7-button>

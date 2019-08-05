@@ -7,7 +7,7 @@
       <f7-row>
         <f7-col>
           <f7-row>启用时间</f7-row>
-          <f7-row><f7-button style="background-color: darkgray;color: black">全天</f7-button></f7-row>
+          <f7-row><f7-button style="background-color: #22aef9;color: white;margin-top: 15px;">全天</f7-button></f7-row>
         </f7-col>
         <f7-col>
           <f7-row>模式</f7-row>
@@ -24,7 +24,8 @@
         <f7-col>如果满足以下条件</f7-col>
       </f7-row>
       <f7-col>
-        <f7-button style="background-color: darkgray;color: black">距离家庭_____km</f7-button>
+        <f7-button style="background-color: #22aef9;color: white;width: 200px;height: 30px;
+    margin-left: 90px;margin-top: 15px;">距离家庭_____km</f7-button>
       </f7-col>
     </f7-block>
 
@@ -40,16 +41,20 @@
     <f7-block>
       <f7-col>执行以下操作</f7-col>
       <f7-col>
-        <f7-button style="background-color: darkgray;color: black">关闭空调</f7-button>
+        <f7-button style="background-color: #22aef9;color: white;width: 300px;height: 30px;
+    margin-left: 50px;margin-top: 15px;">关闭空调</f7-button>
       </f7-col>
       <f7-col>
-        <f7-button style="background-color: darkgray;color: black">关闭窗帘</f7-button>
+        <f7-button style="background-color: #22aef9;color: white;width: 300px;height: 30px;
+    margin-left: 50px;margin-top: 15px;">关闭窗帘</f7-button>
       </f7-col>
       <f7-col>
-        <f7-button style="background-color: darkgray;color: black">关闭空气净化器</f7-button>
+        <f7-button style="background-color: #22aef9;color: white;width: 300px;height: 30px;
+    margin-left: 50px;margin-top: 15px;">关闭空气净化器</f7-button>
       </f7-col>
       <f7-col>
-        <f7-button style="background-color: darkgray;color: black">关闭智能灯</f7-button>
+        <f7-button style="background-color: #22aef9;color: white;width: 300px;height: 30px;
+    margin-left: 50px;margin-top: 15px;">关闭智能灯</f7-button>
       </f7-col>
     </f7-block>
 
