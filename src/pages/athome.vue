@@ -21,10 +21,10 @@
       <f7-row>
         <f7-col>如果满足以下条件</f7-col>
       </f7-row>
-      <f7-col>
-        <f7-button style="background-color: #22aef9;color: white;width: 200px;height: 30px;
-    margin-left: 90px;">摄像头已经检测到人脸</f7-button>
-      </f7-col>
+    <f7-col>
+      <f7-button style="background-color: #22aef9;color: white;width: 200px;height: 30px;
+    margin-left: 100px;margin-top: 15px;">摄像头已检测到人脸</f7-button>
+    </f7-col>
 <!--    </f7-block>-->
 
     <f7-block>
@@ -40,12 +40,12 @@
       <f7-col>执行以下操作</f7-col>
       <f7-col>
         <f7-button style="background-color: #22aef9;color: white;width: 300px;height: 30px;
-    margin-left: 50px;">打开智能灯，回家模式</f7-button>
+    margin-left: 50px;margin-top: 15px;">打开智能灯，回家模式</f7-button>
       </f7-col>
       <f7-col>
         <f7-button style="background-color: #22aef9;color: white; width: 300px;
     height: 30px;
-    margin-left: 50px;">打开窗帘，自动模式</f7-button>
+    margin-left: 50px;margin-top: 15px;">打开窗帘，自动模式</f7-button>
       </f7-col>
     </f7-block>
 

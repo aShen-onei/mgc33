@@ -41,17 +41,17 @@
     <f7-col>
       <f7-button style="background-color: #22aef9;color: white;    width: 300px;
     height: 30px;
-    margin-left: 50px;">打开客厅空调，制冷模式，26度</f7-button>
+    margin-left: 50px;margin-top: 15px;">打开客厅空调，制冷模式，26度</f7-button>
     </f7-col>
     <f7-col>
       <f7-button style="background-color: #22aef9;color: white;    width: 300px;
     height: 30px;
-    margin-left: 50px;">打开卧室空题，制冷模式，26度</f7-button>
+    margin-left: 50px;margin-top: 15px;">打开卧室空题，制冷模式，26度</f7-button>
     </f7-col>
     <f7-col>
       <f7-button style="background-color: #22aef9;color: white;    width: 300px;
     height: 30px;
-    margin-left: 50px;">打开空气净化器，自动模式</f7-button>
+    margin-left: 50px;margin-top: 15px;">打开空气净化器，自动模式</f7-button>
     </f7-col>
   </f7-block>
 

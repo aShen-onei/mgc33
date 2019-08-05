@@ -4,22 +4,17 @@
     <f7-navbar title="离家" back-link="Back"></f7-navbar>
 
     <f7-block>
-      <f7-row>
-        <f7-col>
-          <f7-row>启用时间</f7-row>
-          <f7-row><f7-button style="background-color: #22aef9;color: white;margin-top: 15px;">全天</f7-button></f7-row>
-        </f7-col>
-        <f7-col>
-          <f7-row>模式</f7-row>
-          <f7-row>
+
+<!--        <f7-col>-->
+<!--          <f7-row>启用时间</f7-row>-->
+<!--          <f7-row><f7-button style="background-color: #22aef9;color: white;margin-top: 15px;">全天</f7-button></f7-row>-->
+<!--        </f7-col>-->
+          <f7-block-title>模式</f7-block-title>
             <f7-list>
               <f7-list-item radio title="全自动" name="demo-radio" checked></f7-list-item>
               <f7-list-item radio title="弹窗执行" name="demo-radio"></f7-list-item>
               <f7-list-item radio title="手动执行" name="demo-radio"></f7-list-item>
             </f7-list>
-          </f7-row>
-        </f7-col>
-      </f7-row>
       <f7-row>
         <f7-col>如果满足以下条件</f7-col>
       </f7-row>
